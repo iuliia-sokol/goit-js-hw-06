@@ -16,8 +16,6 @@ const inputEl = document.querySelector("input");
 const btnCreateEl = document.querySelector("[data-create]");
 const btnDestroyEl = document.querySelector("[data-destroy]");
 
-console.dir(typeof inputEl.value);
-
 const boxesContainerEl = document.getElementById("boxes");
 boxesContainerEl.style.display = "flex";
 boxesContainerEl.style.flexWrap = "wrap";
