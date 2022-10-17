@@ -23,6 +23,7 @@ boxesContainerEl.style.gap = "10px";
 boxesContainerEl.style.marginTop = "20px";
 
 btnCreateEl.addEventListener("click", () => {
+  destroyBoxes();
   createBoxes(+inputEl.value);
 });
 
