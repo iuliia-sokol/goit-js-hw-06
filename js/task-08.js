@@ -19,11 +19,18 @@ function onFormSubmit(event) {
   ) {
     alert("Всі поля повинні бути заповнені!");
   } else {
-    const formData = new FormData(event.currentTarget);
-    formData.forEach((value, name) => {
-      console.log("name:", name);
-      console.log("value:", value);
-      formEl.reset();
-    });
+    const formData = {
+      email: event.currentTarget.elements.email.value,
+      password: event.currentTarget.elements.password.value,
+    };
+    console.log(formData);
+    formEl.reset();
+
+    // const formData = new FormData(event.currentTarget);
+    // formData.forEach((value, name) => {
+    //   console.log("name:", name);
+    //   console.log("value:", value);
+    //   formEl.reset();
+    // });
   }
 }
